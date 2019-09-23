@@ -62,7 +62,7 @@ jacocoTestReport {
     reports {
         xml.enabled false
         csv.enabled false
-        html.destination file "${buildDir}/jacocoHtml"
+        html.destination "${buildDir}/jacocoHtml"
     }
 }
 // To specify a license in the pom:
