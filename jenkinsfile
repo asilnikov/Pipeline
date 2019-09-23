@@ -1,4 +1,4 @@
-node(localjenkins) {
+node() {
 	def I = 'asilnikov'
 	checkout([$class: 'GitSCM', branches: [[name: '*/asilnikov']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/asilnikov/Pipeline.git']]])
 	env.PATH=env.PATH+":/opt/gradle/bin"
