@@ -14,9 +14,9 @@ stage('Building code') {
     
 stage('Testing') {
 parallel (
-    'Cucumber Tests': { "Gradle cucumber --status" },
-    'Jacoco Tests': { "Gradle jacocoTestReport --status" },
-    'Unit Tests': { "Gradle test --status" }
+    'Cucumber Tests': { "Gradle cucumber " },
+    'Jacoco Tests': { "Gradle jacocoTestReport " },
+    'Unit Tests': { "Gradle test " }
     )
     echo 'tests: COMPLETED SUCCESSFULLY!'
 	}
