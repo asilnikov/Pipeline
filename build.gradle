@@ -55,10 +55,9 @@ artifacts {
     archives javadocJar
 }
 jacoco {
-    toolVersion = "0.7.6.201602180812"
+    toolVersion = "0.8.4"
     reportsDir = file("$buildDir/customJacocoReportDir")
 }
-
 jacocoTestReport {
     reports {
         xml.enabled false
