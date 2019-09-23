@@ -21,6 +21,9 @@ jar {
 		   "Implementation-Title": "Gradle",
                    "Implementation-Version": "1.0")
     }
+    
+jar.archiveName = 'gradle-simple.jar'
+
 }
 task cucumber() {
     dependsOn assemble, compileTestJava
